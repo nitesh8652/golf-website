@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    color: white;
+    /* color: white; */
 }
 
 #nav{
@@ -19,16 +19,27 @@
     gap: 60px;
     position: fixed;
     z-index: 99;
+    color: white;
     /* font-weight: 500; */
 }
 
 .cursor{
-    height:20px ;
-    width: 20px;
-    background-color:  rgb(179, 34, 192);
+    height:15px ;
+    width: 15px;
+    background-color: #95B112;
     border-radius: 50px;
     z-index: 99;
     position: fixed;
+}
+
+.cursor-blur{
+    height:80px ;
+    width: 80px;
+    background-color:  #95B112;
+    border-radius: 50%;
+    filter: blur(60px);
+    position: fixed;
+    z-index: 99;
 }
 
 #nav img{
@@ -40,7 +51,7 @@ video{
     width: 100%;
     object-fit: cover;
     position: fixed;
-    z-index: -2;
+    z-index: -999;
 }
 
 #main{
@@ -63,6 +74,9 @@ video{
     color: white;
     font-weight: 900;
     position: relative;
+    color: #ffffff;
+    text-shadow: 0 0 7px #95B112;
+    
 }
 #background h2{
     font-size: 35px;
@@ -86,7 +100,7 @@ video{
     position: absolute;
     left:-3px;
     top: -2px;
-    -webkit-text-stroke: 2px rgb(179, 34, 192);
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
     color:  rgb(52, 2, 56);
     z-index: -1;
 }
@@ -96,6 +110,46 @@ video{
     width: 100%;
 }
 
+.scrollinganimation{
+    font-size: 80px;
+    font-weight: 900;
+    text-shadow: 0 0 2px #ffffff;
+    position: absolute;
+    top: 640px;
+    color: black;
+    
+    
+}
 
+.scrollinganimation> :nth-child(1){
+    -webkit-text-stroke: 2px #ffffff;
+    color:#000000;
+    text-shadow: 0 0 9px #ffffff;
+    
+}
+.scrollinganimation> :nth-child(1):hover{
+  
+    color:#95B112;
+    text-shadow: 0 0 3px #95B112;
+    -webkit-text-stroke: 0px #ffffff;
+}
 
+.aboutus{
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 155px 0px ;
+}
 
+.park> :nth-child(1){
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+}
+.hockey> :nth-child(1){
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+}

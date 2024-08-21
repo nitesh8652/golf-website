@@ -1,9 +1,12 @@
- crsr=document.querySelector('.cursor')
-document.addEventListener("mousemove",function(dets){
-    // console.log(dets)
-    crsr.style.left=dets.clientX+"px"
-    crsr.style.top=dets.clientY+"px"
-})
+ let crsr=document.querySelector('.cursor')
+let blur=document.querySelector('.cursor-blur')
+// document.addEventListener("mousemove",function(dets){
+//     // console.log(dets) 
+//     crsr.style.left=dets.x+"px"
+//     crsr.style.top=dets.y+"px"
+//     blur.style.left=dets.x-30+"px"
+//     blur.style.top=dets.y-30+"px"
+// })
 
 gsap.to("#nav",{
     backgroundColor:"#000",
