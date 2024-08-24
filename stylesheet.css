@@ -195,44 +195,44 @@ video {
     gap: 80px;
     margin-top: -265px;
     overflow: hidden;
-   
+
 }
 
 .cards> :nth-child(1) {
     color: white;
     font-weight: 900;
     transition: ease-in-out;
-    text-align:left;
+    text-align: left;
     padding: 8px;
-    margin-top: 290px;
-    font-size: 35px;
+    margin-top: 270px;
+    font-size: 50px;
     -webkit-text-stroke: 1px #00000067;
-    
+
 }
 
 
 
 .cards:hover .trhover {
     display: none;
-  }
+}
+
 .cards:hover .adhover {
     display: none;
-  }
+}
+
 .cards:hover .Lhover {
     display: none;
-  }
+}
 
 .cards {
     height: 350px;
-    width: 330px; 
+    width: 330px;
     border-radius: 13px;
     overflow: hidden;
-    
 
-    
+
+
 }
-
-
 
 #card1 {
     background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
@@ -246,18 +246,20 @@ video {
     background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
 }
 
-#card1 , #card2 , #card3{
+#card1,
+#card2,
+#card3 {
     background-size: cover;
     background-position: center;
     transition: transform 0.9s;
-    
 }
 
-#card1:hover,#card2:hover,#card3:hover{
-transform:scale(1.1);
-transform: rotate3d(-1,1,0,12deg);
-overflow: hidden;
-
+#card1:hover,
+#card2:hover,
+#card3:hover {
+    transform: scale(1.1);
+    transform: rotate3d(-1, 1, 0, 12deg);
+    overflow: hidden;
 }
 
 
@@ -271,8 +273,6 @@ overflow: hidden;
     opacity: 0;
     transition: opacity 0.9s;
     overflow: hidden;
-    
-
 }
 
 .transaition h4 {
@@ -286,37 +286,119 @@ overflow: hidden;
     font-weight: 500;
     font-size: 18px;
     padding-top: 20px;
-
 }
 
-.transaition:hover{
+.transaition:hover {
     opacity: 100;
     transition: opacity 0.9s;
 }
 
-.greencontainer{
-    background-color: rgb(0, 81, 255);
-    margin-top: 91px;
+.greencontainer {
+    margin-top: 60px;
+    height: 185px;
+    background : linear-gradient( #24A436,#69B429,#A1D021);
     display: flex;
-
-    text-align: center;
-    color: #95B112;
-    display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-   
+    flex-direction: row;
+    text-transform: uppercase;
+    text-align: center;
 }
 
+.greencontainer h2{
+    font-size: 30px;
+    text-shadow:   8px 4px 20px #00000091;
+
+}
+
+
 .greencontainer> :nth-child(1) {
-    
-    height: 55px;
-    width: 55px;
+    object-fit: cover;
+    height: 100%;
+    width: 95px;
     z-index: 99;
+    opacity: 50;
 }
 
 .greencontainer> :nth-child(3) {
+    object-fit: cover;
+    height: 100%;
+    width: 95px;
     z-index: 99;
-    height: 55px;
-    width: 55px;
-
 }
+
+.slideshow-container {
+    
+    position: relative;
+    width: 550px;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .mySlides img {
+    width: 550px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+
+  
+ 
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+   margin-top: 44px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+.hehe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
