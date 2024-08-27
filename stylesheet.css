@@ -537,6 +537,7 @@ video {
     justify-content: center;
     gap: 25px;
     z-index: 999;
+    margin-top: -18px;
 
 }
 
