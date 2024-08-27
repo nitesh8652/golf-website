@@ -45,7 +45,7 @@ gsap.to("#nav", {
         // markers:true,
         start: "top -15%",
         end: "top -16%",
-        scrub: 1
+        // scrub: 1
     }
 })
 
@@ -59,6 +59,7 @@ gsap.to("#main", {
         scrub: 1
     }
 })
+
 
 
 

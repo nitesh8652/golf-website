@@ -136,6 +136,8 @@ video {
 #scroll {
     height: 100vh;
     width: 100%;
+    background-color: black;
+    transition: background-color 0.9s ease-in-out;
 }
 
 .scrollinganimation {
@@ -145,13 +147,8 @@ video {
     position: absolute;
     top: 640px;
     color: black;
-   
-}
 
-/* .scrollinganimation> :nth-child(1){
-    white-space: nowrap;
-    overflow-x: hidden;
-} */
+}
 
 
 .scrollinganimation> :nth-child(1) {
@@ -623,4 +620,72 @@ video {
     background-color: rgb(46, 156, 42); 
     transform: scale(1.1);
   }
+
+
+
+.footbar{
+    height: 278px;
+    width: 100%;
+    background: linear-gradient(to left,#0B9E3B,#25A536, #57B12B ,#6EB727, #95C21E,#9ECD20);
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.footbar img{
+    background-position: center;
+    background-size: cover;
+    height: 330px;
+    opacity: 0.5;
+}
+
+.footertxt {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -280px;  
+    font-family: "Montserrat", sans-serif;
+    /* margin-left: 192px; */
+}
+
+.footerimg img{
+    height: 182px;
+    width: 169px;
+ filter: invert(1);
+ filter: contrast(6);
+ 
+}
+
+.firsttxt h4{
+    
+    font-size: 25px;
+    font-weight: 900;
+}
+.secondtxt h4{
+    
+    font-size: 25px;
+    font-weight: 900;
+}
+.thirdtxt h4{
+    font-size: 25px;
+    font-weight: 900;
+}
+.thirdtxt p{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "poppins";
+}
+
+
+.copyright p{
+    font-family: "poppins";
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+
+.footertxt h4:hover{
+    color: rgb(255, 255, 255);
+}
 
