@@ -517,11 +517,10 @@ video {
 
 
 .waiting {
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    ;
+   
 }
 
 .waiting h3 {
@@ -529,27 +528,19 @@ video {
     font-size: 70px;
     font-family: "Montserrat", sans-serif;
     text-shadow:1px 0 0 rgb(255, 255, 255),0 1px 0 rgb(255, 255, 255),-1px 0 0 rgb(255, 255, 255),0 -1px 0 rgb(255, 255, 255);
-    color: black;
-    
-   
-    
+ 
 }
-
-.waiting h3:hover {
-    color: black ;
-    text-shadow: 0 0 3px #6fad0c;
-    text-shadow:2px 0 0 rgb(46, 156, 42),0 1px 0 rgb(46, 156, 42),-1px 0 0 rgb(46, 156, 42),0 -1px 0 rgb(46, 156, 42);
-}
-
 
 .cadie {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 25px;
+    z-index: 999;
+
 }
 
-.one {
+.one h3{
     height: 165px;
     width: 370px;
     background-color: rgb(166, 212, 38);
@@ -559,13 +550,26 @@ video {
     justify-content: center;
     font-weight: 900;
     font-size: 30px;
+   
 }
 
-.two {
-    height: 165px;
-    font-weight: 900;
-    font-size: 30px;
+.cadie:hover .one{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-toptracer-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+   
+} 
+
+.one h3:hover{
+    opacity: 0;
     
+}
+
+.two h3 {
+    height: 165px;
+    font-weight: 900;
+    font-size: 30px;
     width: 370px;
     background-color: rgb(166, 212, 38);
     border-radius: 20px;
@@ -574,7 +578,19 @@ video {
     justify-content: center;
 }
 
-.three {
+.cadie:hover .two{
+    background-image:url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    background-position: center;
+    /* background-size: cover; */
+    border-radius: 20px;
+}
+
+.two h3:hover{
+    opacity: 0;
+  
+}
+
+.three h3{
     height: 165px;
     width: 370px;
     font-weight: 900;
@@ -585,3 +601,25 @@ video {
     align-items: center;
     justify-content: center;
 }
+
+.three h3:hover{
+    opacity: 0;
+}
+
+.cadie:hover .three{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-ag-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    
+}
+
+.one, .two, .three {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .one:hover, .two:hover, .three:hover {
+    background-color: rgb(46, 156, 42); 
+    transform: scale(1.1);
+  }
+

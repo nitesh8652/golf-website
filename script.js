@@ -145,3 +145,20 @@ function index(n) {
     dot[n - 1].className += " active";
     updateActiveDot(n);
 }
+
+let waiting=document.querySelector('.waiting h3');
+let cadiefont = document.querySelectorAll('.cadie .one , .cadie .two , .cadie .three');
+cadiefont.forEach((Element)=>{
+    Element.addEventListener('mouseover',()=>{
+        waiting.style.textShadow=' 2px 0 0 rgb(46, 156, 42),0 1px 0 rgb(46, 156, 42),-1px 0 0 rgb(46, 156, 42),0 -1px 0 rgb(46, 156, 42)';
+    })
+
+    Element.addEventListener('mouseout',()=>{
+        waiting.style.textShadow='1px 0 0 rgb(255, 255, 255),0 1px 0 rgb(255, 255, 255),-1px 0 0 rgb(255, 255, 255),0 -1px 0 rgb(255, 255, 255)';
+    })
+})
+
+
+
+
+
