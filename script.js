@@ -1,67 +1,112 @@
 let crsr = document.querySelector('.cursor')
 let blur = document.querySelector('.cursor-blur')
+// document.addEventListener("mousemove", function (dets) {
+//     // console.log(dets) 
+//     crsr.style.left = dets.x + "px"
+//     crsr.style.top = dets.y + "px"
+//     blur.style.left = dets.x - 30 + "px"
+//     blur.style.top = dets.y - 30 + "px"
+// })
+
+
+// var bigcursor = document.querySelectorAll("#nav h4, #card1,#card2,#card3,.slidepara button")
+// bigcursor.forEach(function (elem) {
+//     elem.addEventListener("mouseenter", function () {
+//         crsr.style.scale = 2;
+//         crsr.style.border = "0.1px solid white";
+//         crsr.style.backgroundColor = "transparent";
+//         gsap.to(crsr, {
+//             duration: 0.5,
+//             scale: 1.2,
+//             ease: "power2.inOut"
+//         });
+//     });
+//     elem.addEventListener("mouseleave", function () {
+//         crsr.style.scale = 2;
+//         crsr.style.border = "0px solid #d0ff00";
+//         crsr.style.backgroundColor = "transparent";
+//         gsap.to(crsr, {
+//             duration: 0.5,
+//             scale: 1,
+//             ease: "power2.inOut"
+//         });
+//     });
+// });
+
+
+
+// // gsap.to("#nav", {
+// //     backgroundColor: "#000",
+// //     duration: 1,
+// //     height: "80px",
+// //     scrollTrigger: {
+// //         trigger: "#nav",
+// //         scroller: "body",
+// //         // markers:true,
+// //         start: "top -15%",
+// //         end: "top -16%",
+// //         // scrub: 1
+// //     }
+// // })
+
+// // gsap.to("#main", {
+// //     backgroundColor: "#000",
+// //     scrollTrigger: {
+// //         trigger: "#main",
+// //         scroller: "body",
+// //         start: "top -15%",
+// //         end: "top -15%",
+// //         scrub: 1
+// //     }
+// // })
+
+
 document.addEventListener("mousemove", function (dets) {
-    // console.log(dets) 
     crsr.style.left = dets.x + "px"
     crsr.style.top = dets.y + "px"
     blur.style.left = dets.x - 30 + "px"
     blur.style.top = dets.y - 30 + "px"
-})
+});
 
-
-var bigcursor = document.querySelectorAll("#nav h4, #card1,#card2,#card3,.slidepara button")
-bigcursor.forEach(function (elem) {
+var h4all = document.querySelectorAll("#nav h4, #card1,#card2,#card3,.slidepara button,.dots,.one,.two,.three,.copyright a");
+h4all.forEach(function (elem) {
     elem.addEventListener("mouseenter", function () {
         crsr.style.scale = 2;
-        crsr.style.border = "0.1px solid white";
+        crsr.style.border = "1px solid #fff";
         crsr.style.backgroundColor = "transparent";
-        gsap.to(crsr, {
-            duration: 0.5,
-            scale: 1.2,
-            ease: "power2.inOut"
-        });
-    });
+    })
     elem.addEventListener("mouseleave", function () {
-        crsr.style.scale = 2;
-        crsr.style.border = "0px solid #d0ff00";
-        crsr.style.backgroundColor = "transparent";
-        gsap.to(crsr, {
-            duration: 0.5,
-            scale: 1,
-            ease: "power2.inOut"
-        });
+        crsr.style.scale = 1;
+        crsr.style.border = "0px solid #95C11E";
+        crsr.style.backgroundColor = "#95C11E";
     });
 });
 
-
-
 gsap.to("#nav", {
     backgroundColor: "#000",
-    duration: 1,
-    height: "80px",
+    duration: 0.5,
+    height: "110px",
     scrollTrigger: {
         trigger: "#nav",
         scroller: "body",
         // markers:true,
-        start: "top -15%",
-        end: "top -16%",
-        // scrub: 1
-    }
-})
+        start: "top -10%",
+        end: "top -11%",
+        scrub: 1,
+    },
+});
 
 gsap.to("#main", {
     backgroundColor: "#000",
     scrollTrigger: {
         trigger: "#main",
         scroller: "body",
-        start: "top -15%",
-        end: "top -15%",
-        scrub: 1
-    }
-})
-
-
-
+        // markers: true,
+        start: "top -8%",
+        end: "top -9%",
+        scrub: 2,
+    },
+});
 
 
 let slidingimg = 1;
@@ -147,15 +192,15 @@ function index(n) {
     updateActiveDot(n);
 }
 
-let waiting=document.querySelector('.waiting h3');
+let waiting = document.querySelector('.waiting h3');
 let cadiefont = document.querySelectorAll('.cadie .one , .cadie .two , .cadie .three');
-cadiefont.forEach((Element)=>{
-    Element.addEventListener('mouseover',()=>{
-        waiting.style.textShadow=' 2px 0 0 rgb(46, 156, 42),0 1px 0 rgb(46, 156, 42),-1px 0 0 rgb(46, 156, 42),0 -1px 0 rgb(46, 156, 42)';
+cadiefont.forEach((Element) => {
+    Element.addEventListener('mouseover', () => {
+        waiting.style.textShadow = ' 2px 0 0 rgb(46, 156, 42),0 1px 0 rgb(46, 156, 42),-1px 0 0 rgb(46, 156, 42),0 -1px 0 rgb(46, 156, 42)';
     })
 
-    Element.addEventListener('mouseout',()=>{
-        waiting.style.textShadow='1px 0 0 rgb(255, 255, 255),0 1px 0 rgb(255, 255, 255),-1px 0 0 rgb(255, 255, 255),0 -1px 0 rgb(255, 255, 255)';
+    Element.addEventListener('mouseout', () => {
+        waiting.style.textShadow = '1px 0 0 rgb(255, 255, 255),0 1px 0 rgb(255, 255, 255),-1px 0 0 rgb(255, 255, 255),0 -1px 0 rgb(255, 255, 255)';
     })
 })
 
