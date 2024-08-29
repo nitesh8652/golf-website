@@ -1,64 +1,5 @@
 let crsr = document.querySelector('.cursor')
 let blur = document.querySelector('.cursor-blur')
-// document.addEventListener("mousemove", function (dets) {
-//     // console.log(dets) 
-//     crsr.style.left = dets.x + "px"
-//     crsr.style.top = dets.y + "px"
-//     blur.style.left = dets.x - 30 + "px"
-//     blur.style.top = dets.y - 30 + "px"
-// })
-
-
-// var bigcursor = document.querySelectorAll("#nav h4, #card1,#card2,#card3,.slidepara button")
-// bigcursor.forEach(function (elem) {
-//     elem.addEventListener("mouseenter", function () {
-//         crsr.style.scale = 2;
-//         crsr.style.border = "0.1px solid white";
-//         crsr.style.backgroundColor = "transparent";
-//         gsap.to(crsr, {
-//             duration: 0.5,
-//             scale: 1.2,
-//             ease: "power2.inOut"
-//         });
-//     });
-//     elem.addEventListener("mouseleave", function () {
-//         crsr.style.scale = 2;
-//         crsr.style.border = "0px solid #d0ff00";
-//         crsr.style.backgroundColor = "transparent";
-//         gsap.to(crsr, {
-//             duration: 0.5,
-//             scale: 1,
-//             ease: "power2.inOut"
-//         });
-//     });
-// });
-
-
-
-// // gsap.to("#nav", {
-// //     backgroundColor: "#000",
-// //     duration: 1,
-// //     height: "80px",
-// //     scrollTrigger: {
-// //         trigger: "#nav",
-// //         scroller: "body",
-// //         // markers:true,
-// //         start: "top -15%",
-// //         end: "top -16%",
-// //         // scrub: 1
-// //     }
-// // })
-
-// // gsap.to("#main", {
-// //     backgroundColor: "#000",
-// //     scrollTrigger: {
-// //         trigger: "#main",
-// //         scroller: "body",
-// //         start: "top -15%",
-// //         end: "top -15%",
-// //         scrub: 1
-// //     }
-// // })
 
 
 document.addEventListener("mousemove", function (dets) {
@@ -68,7 +9,7 @@ document.addEventListener("mousemove", function (dets) {
     blur.style.top = dets.y - 30 + "px"
 });
 
-var h4all = document.querySelectorAll("#nav h4, #card1,#card2,#card3,.slidepara button,.dots,.one,.two,.three,.copyright a");
+var h4all = document.querySelectorAll("#nav h4, #card1,#card2,#card3,.slidepara button,.dots,.one,.two,.three,.copyright a,.buttns");
 h4all.forEach(function (elem) {
     elem.addEventListener("mouseenter", function () {
         crsr.style.scale = 2;
@@ -205,6 +146,47 @@ cadiefont.forEach((Element) => {
 })
 
 
+// gsap.from(".aboutus",{
+//     y:50,
+//     opacity:0,
+//     duration:0.5,
+//     scrollTrigger:{
+//         trigger:".aboutus",
+//         scroller:"body",
+//         start:"top 50%",
+//         end:"top 40%",
+//         scrub:1
+//     }
+// })
+
+
+
+
+// gsap.from(".waiting",{
+//     y:50,
+//     scrollTrigger:{
+//         trigger:".waiting",
+//         scroller:"body",
+//         start:"top 50%",
+//         end:"top 40%",
+//         scrub:1
+//     }
+// })
+
+
+// Your JavaScript
+const arrow = document.getElementById('arrow');
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+  const threshold = 200; 
+
+  if (scrollPosition > threshold) {
+    arrow.classList.add('i');
+  } else {
+    arrow.classList.remove('i');
+  }
+});
 
 
 

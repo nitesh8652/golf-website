@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 0px 100px;
+    margin: 5px;
     gap: 60px;
     position: fixed;
     z-index: 99;
@@ -24,6 +25,9 @@
     /* font-weight: 500; */
 }
 
+#nav h4{
+    margin: -5px;
+}
 
 #nav img {
     height: 65px;
@@ -43,7 +47,7 @@
     background-color:#000;
     color:#fff;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .btn-55 {
@@ -55,10 +59,11 @@
     font-weight: 500;
     overflow: hidden;
     /* padding: 1.8rem 5rem; */
-    height: 47px;
+    height: 42px;
     width: 122px;
     position: relative;
     text-transform: uppercase;
+    margin: 12px;
 }
 
 .btn-55 span {
@@ -74,6 +79,13 @@
 
 .btn-55:hover span {
     background: none;
+}
+
+.buttns{
+    display: flex;
+    flex-direction: row;
+    margin-left: 27px;
+    
 }
 
 .cursor {
@@ -585,7 +597,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
 }
 
 .waiting h3 {
@@ -772,3 +784,32 @@ video {
 .footertxt h4:hover {
     color: rgb(255, 255, 255);
 }
+
+
+#arrow{
+    position: fixed;
+    bottom: 25px;
+    left: 50px;  
+    cursor: pointer;
+    background-color:rgb(149, 193, 30) ;
+    height: 58px;
+    width: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    border-radius: 50%;
+    font-size: 37px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#arrow:hover{
+    background-color: transparent;
+    border: 2px solid rgb(17, 159, 57);
+  
+}
+#arrow.i {
+    visibility: visible;
+    opacity: 1;
+  }
