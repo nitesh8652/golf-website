@@ -11,7 +11,6 @@
 
 
 #nav {
-    height: 90px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -23,15 +22,53 @@
     z-index: 99;
     color: white;
     /* font-weight: 500; */
+
 }
 
-#nav h4{
+
+#nav h4 {
     margin: -5px;
 }
 
 #nav img {
     height: 65px;
 }
+
+
+@media only screen and (max-width:1259px) {
+    #nav {
+        color: #7a00ff;
+        padding: 0px 20px;
+        gap: 211px;
+
+    }
+
+    #nav h4 {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    #nav img {
+        height: 55px;
+    }
+
+    .aboutus {
+        overflow: hidden;
+    }
+
+    .waiting {
+        overflow: hidden;
+    }
+
+    .cadie {
+        overflow: hidden;
+    }
+
+    .footbar {
+        overflow: hidden;
+    }
+}
+
 
 .btn-55,
 .btn-55 *,
@@ -44,8 +81,8 @@
 }
 
 .btn-55 {
-    background-color:#000;
-    color:#fff;
+    background-color: #000;
+    color: #fff;
     cursor: pointer;
     font-size: 16px;
 }
@@ -54,7 +91,7 @@
     background: linear-gradient(to left, rgb(50, 157, 62), rgb(157, 205, 37));
     border-radius: 15px;
     box-sizing: border-box;
-    color:#000;
+    color: #000;
     display: block;
     font-weight: 500;
     overflow: hidden;
@@ -66,10 +103,13 @@
     margin: 12px;
 }
 
+
+
+
 .btn-55 span {
-    background:#000000;
+    background: #000000;
     border-radius: 15px;
-    color:#fff;
+    color: #fff;
     display: grid;
     inset: 3px;
     place-items: center;
@@ -81,12 +121,31 @@
     background: none;
 }
 
-.buttns{
+.buttns {
     display: flex;
     flex-direction: row;
     margin-left: 27px;
-    
+
 }
+
+@media only screen and (max-width:1259px) {
+    .btn-55 {
+        height: 36px;
+        width: 80px;
+    }
+
+    .btn-55 {
+        font-size: 8px;
+    }
+
+    .buttns {
+        margin-left: -128px;
+    }
+}
+
+
+
+
 
 .cursor {
     height: 15px;
@@ -197,12 +256,72 @@ video {
     z-index: -1;
 }
 
-/* #scroll {
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-   
-} */
+@media only screen and (max-width:1259px) {
+    #background h1 {
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    #background h2 {
+        font-size: 20px;
+    }
+
+    #background h4 {
+        font-size: 11px;
+        width: 80%;
+    }
+
+}
+
+/* @media only screen and (max-width:1259px){
+        .aboutus{
+            visibility: hidden !important;
+        }
+        .waiting{
+            
+            visibility: hidden !important;
+        }
+        .cadie{
+            visibility: hidden !important;
+        }
+        .buttns{
+            visibility: hidden !important;
+
+        }
+        #nav{
+            visibility: hidden !important;
+        }
+        #cards-container{
+            visibility: hidden !important;
+        }
+        .totalwidth{
+            visibility: hidden !important;
+        }
+        .footbar{
+            visibility: hidden !important;
+        }
+        .greencontainer{
+            visibility: hidden !important;
+        }
+        .slideshow-container{
+            visibility: hidden !important;
+        }
+        #arrow{
+            visibility: hidden !important;
+        }
+        #background{
+            visibility: hidden !important;
+        }
+        .scrollinganimation{
+            visibility: hidden !important;
+        }
+       
+    }  */
+
+
+
 
 #scroll {
     position: absolute;
@@ -241,6 +360,13 @@ video {
     color: #95B112;
     text-shadow: 0 0 3px #95B112;
     -webkit-text-stroke: 0px #ffffff;
+}
+
+@media only screen and (max-width:1259px) {
+    .scrollinganimation {
+        font-size: 40px;
+
+    }
 }
 
 .aboutus {
@@ -292,6 +418,54 @@ video {
     text-align: center;
     margin-top: 20px;
 }
+
+
+@media only screen and (max-width:1259px) {
+
+    .aboutus> :nth-child(1) {
+        height: 150px;
+        width: 150px;
+        margin-top: -420px;
+        border-radius: 7px;
+        /* margin-right: 15px; */
+        margin-left: 0px;
+        margin-top: -495px;
+    }
+
+    .aboutus> :nth-child(3) {
+        height: 150px;
+        width: 150px;
+        margin-top: -420px;
+        border-radius: 7px;
+        margin-left: -16px;
+        /* margin-left: -50px; */
+        margin-top: -495px;
+    }
+
+  
+
+
+        .para p {
+        font-size: 14px;
+       padding-top: 12px;
+    }
+
+    .para> :nth-child(1) {
+        font-size: 18px;
+        
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
 
 #cards-container {
     /* background-color: #95B112; */
@@ -597,7 +771,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .waiting h3 {
@@ -786,12 +960,12 @@ video {
 }
 
 
-#arrow{
+#arrow {
     position: fixed;
     bottom: 25px;
-    left: 50px;  
+    left: 50px;
     cursor: pointer;
-    background-color:rgb(149, 193, 30) ;
+    background-color: rgb(149, 193, 30);
     height: 58px;
     width: 59px;
     display: flex;
@@ -804,12 +978,13 @@ video {
     transition: opacity 0.5s;
 }
 
-#arrow:hover{
+#arrow:hover {
     background-color: transparent;
     border: 2px solid rgb(17, 159, 57);
-  
+
 }
+
 #arrow.i {
     visibility: visible;
     opacity: 1;
-  }
+}
