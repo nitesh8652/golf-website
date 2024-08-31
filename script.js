@@ -146,47 +146,22 @@ cadiefont.forEach((Element) => {
 })
 
 
-// gsap.from(".aboutus",{
-//     y:50,
-//     opacity:0,
-//     duration:0.5,
-//     scrollTrigger:{
-//         trigger:".aboutus",
-//         scroller:"body",
-//         start:"top 50%",
-//         end:"top 40%",
-//         scrub:1
-//     }
-// })
 
 
-
-
-// gsap.from(".waiting",{
-//     y:50,
-//     scrollTrigger:{
-//         trigger:".waiting",
-//         scroller:"body",
-//         start:"top 50%",
-//         end:"top 40%",
-//         scrub:1
-//     }
-// })
-
-
-// Your JavaScript
-const arrow = document.getElementById('arrow');
-
-window.addEventListener('scroll', () => {
-  const scrollPosition = window.scrollY;
-  const threshold = 200; 
-
-  if (scrollPosition > threshold) {
-    arrow.classList.add('i');
-  } else {
-    arrow.classList.remove('i');
+function scrollToTop() {
+    const threshold = 200;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-});
+//   window.addEventListener('scroll', function() {
+   
+//   if (scrollPosition > threshold) {
+//     arrow.classList.add('i');
+//     console.log("Added class 'i'");
+//   } else {
+//     arrow.classList.remove('i');
+//     console.log("Removed class 'i'");
+//   }
+//   });
 
 
 

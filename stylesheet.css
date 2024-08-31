@@ -19,7 +19,7 @@
     margin: 5px;
     gap: 60px;
     position: fixed;
-    z-index: 99;
+    z-index: 9999;
     color: white;
     /* font-weight: 500; */
 
@@ -375,7 +375,7 @@ video {
 
     color: white;
     position: relative;
-    top: -220px;
+    top: 0px;
 
 }
 
@@ -388,15 +388,15 @@ video {
 }
 
 .usimg> :nth-child(1) {
-    height: 160px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
     border-radius: 7px;
 
 }
 
 .usimg> :nth-child(2) {
-    height: 160px;
-    width: 180px;
+    height: 200px;
+    width: 200px;
     border-radius: 7px;
 
 }
@@ -415,23 +415,27 @@ video {
 .para> :nth-child(1) {
     font-weight: 900;
     font-size: 35px;
-    /* margin-top: -302px; */
-    margin-top: -302px;
+    position: absolute;
+    top: -120px;
 }
 
 .para> :nth-child(2) {
     text-align: center;
-    margin-top: 23px;
+    position: relative;
+    bottom: 260px;
     text-align: center;
     width: 50%;
+    font-size: 19px;
 
 }
 
 .para> :nth-child(3) {
     margin-bottom: 222px;
     text-align: center;
-    margin-top: 60px;
-
+    position: relative;
+    bottom: 255px;
+    color: rgba(255, 255, 255, 0.726);
+    line-height: 85px;
 
 }
 
@@ -439,9 +443,13 @@ video {
     .usimg> :nth-child(1) {
         height: 150px;
         width: 150px;
+        position: relative;
+        bottom: -50px;
     }
 
     .usimg> :nth-child(2) {
+        position: relative;
+        bottom: -50px;
         height: 150px;
         width: 150px;
     }
@@ -449,16 +457,23 @@ video {
     .para> :nth-child(2) {
         width: 90%;
         margin-top: 270px;
-
+        position: relative;
+        bottom: 165px;
 
     }
-
+    .para> :nth-child(1) {
+        font-weight: 900;
+        font-size: 35px;
+        position: absolute;
+        top: 0px;
+    }
 
     .para> :nth-child(3) {
         margin-bottom: 222px;
         text-align: center;
-        margin-top: 25px;
-
+        position: relative;
+        bottom: 30px;
+        line-height: 32px;
     }
 
     .aboutus {
@@ -467,9 +482,8 @@ video {
 
 
 
+
 }
-
-
 
 
 
@@ -482,7 +496,31 @@ video {
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin-top: -265px;
+    position: relative;
+    bottom: 190px;
+    overflow: hidden;
+}
+
+.cards> :nth-child(1) {
+    color: white;
+    font-weight: 900;
+    transition: ease-in-out;
+    text-align: left;
+    padding: 8px;
+    margin-top: 300px;
+    font-size: 50px;
+    -webkit-text-stroke: 1px #00000067;
+
+}
+
+/* #cards-container {
+
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: -615px;
     overflow: hidden;
 }
 
@@ -496,7 +534,7 @@ video {
     font-size: 50px;
     -webkit-text-stroke: 1px #00000067;
 
-}
+} */
 
 .cards:hover .trhover {
     display: none;
@@ -511,7 +549,7 @@ video {
 }
 
 .cards {
-    height: 350px;
+    height: 400px;
     width: 330px;
     border-radius: 13px;
     overflow: hidden;
@@ -671,6 +709,7 @@ video {
     border-radius: 17px;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 
 }
 
@@ -819,7 +858,7 @@ video {
         flex-direction: column;
         position: relative;
         bottom: 735px;
-
+        overflow: hidden;
     }
 
     .slideshow-container img {
@@ -884,18 +923,7 @@ video {
     }
 
 
-
-
-
-
 }
-
-
-
-
-
-
-
 
 .totalwidth {
     display: flex;
@@ -905,6 +933,17 @@ video {
     width: 53%;
     z-index: 99;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 .waiting {
@@ -970,6 +1009,7 @@ video {
     justify-content: center;
 }
 
+
 .cadie:hover .two {
     background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/page-lessons-1024x683.jpg?strip=all&lossy=1&sharp=1&ssl=1);
     background-position: center;
@@ -1018,6 +1058,106 @@ video {
     background-color: rgb(46, 156, 42);
     transform: scale(1.1);
 }
+
+
+
+
+@media only screen and (max-width:1259px) {
+
+
+
+    .waiting h3 {
+
+        margin-top: 142px;
+        font-size: 23px;
+        position: absolute;
+        bottom: 1917px;
+
+    }
+
+
+    .two h3 {
+        height: 165px;
+        font-size: 30px;
+        width: 370px;
+
+
+    }
+
+
+    .cadie {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        z-index: 999;
+        margin-top: -4px;
+        position: relative;
+        bottom: 640px;
+
+    }
+
+
+    .two h3 {
+        height: 143px;
+        width: 310px;
+        font-weight: 900;
+        font-size: 30px;
+
+        background-color: rgb(166, 212, 38);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .three h3 {
+        height: 143px;
+        width: 310px;
+        font-weight: 900;
+        font-size: 30px;
+        background-color: rgb(166, 212, 38);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .one h3 {
+        height: 143px;
+        width: 310px;
+        background-color: rgb(166, 212, 38);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 30px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1100,6 +1240,67 @@ video {
 }
 
 
+@media only screen and (max-width:1259px) {
+    .footbar {
+        height: 706px;
+        width: 100%;
+        background: linear-gradient(to left, #0B9E3B, #25A536, #57B12B, #6EB727, #95C21E, #9ECD20);
+        position: relative;
+        bottom: 460px;
+        overflow: hidden;
+
+    }
+
+    .footertxt {
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -280px;
+        font-family: "Montserrat", sans-serif;
+        /* margin-left: 192px; */
+    }
+
+    .firsttxt h4 {
+
+        font-size: 25px;
+        font-weight: 900;
+
+    }
+
+    .secondtxt h4 {
+
+        right: 33px;
+        position: relative;
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    .thirdtxt h4 {
+        font-size: 25px;
+
+        right: 33px;
+        position: relative;
+        font-weight: 900;
+    }
+
+    .thirdtxt p {
+
+        font-size: 18px;
+        font-weight: 500;
+        font-family: "poppins";
+    }
+
+    .copyright {
+        margin-right: 7px;
+        bottom: -60px;
+        position: relative;
+    }
+
+}
+
+
 #arrow {
     position: fixed;
     bottom: 25px;
@@ -1114,7 +1315,7 @@ video {
     font-weight: 900;
     border-radius: 50%;
     font-size: 37px;
-    opacity: 0;
+
     transition: opacity 0.5s;
 }
 
@@ -1122,9 +1323,4 @@ video {
     background-color: transparent;
     border: 2px solid rgb(17, 159, 57);
 
-}
-
-#arrow.i {
-    visibility: visible;
-    opacity: 1;
 }
