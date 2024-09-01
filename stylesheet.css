@@ -78,13 +78,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    visibility: hidden;
 
 }
-
-/* .hide {
-    visibility: hidden;
-} */
-
 
 .btn-79,
 .btn-79 *,
