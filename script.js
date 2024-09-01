@@ -151,9 +151,9 @@ cadiefont.forEach((Element) => {
 function scrollToTop() {
     const threshold = 200;
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+}
 //   window.addEventListener('scroll', function() {
-   
+
 //   if (scrollPosition > threshold) {
 //     arrow.classList.add('i');
 //     console.log("Added class 'i'");
@@ -164,4 +164,11 @@ function scrollToTop() {
 //   });
 
 
-
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
