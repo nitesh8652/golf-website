@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blur Effect</title>
+    <style>
+        .blur {
+            filter: blur(5px);
+        }
+    </style>
+</head>
+<body>
+    <div id="element1">Element 1</div>
+    <div id="element2">Element 2</div>
+    <div id="element3">Element 3</div>
+
+    <script>
+        document.querySelectorAll('div').forEach(element => {
+            element.addEventListener('click', () => {
+                document.querySelectorAll('div').forEach(el => {
+                    el.classList.add('blur');
+                });
+                element.classList.remove('blur'); // Remove blur from the clicked element
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,27 +1,27 @@
-let crsr = document.querySelector('.cursor')
-let blur = document.querySelector('.cursor-blur')
+// let crsr = document.querySelector('.cursor')
+// let blur = document.querySelector('.cursor-blur')
 
 
-document.addEventListener("mousemove", function (dets) {
-    crsr.style.left = dets.x + "px"
-    crsr.style.top = dets.y + "px"
-    blur.style.left = dets.x - 30 + "px"
-    blur.style.top = dets.y - 30 + "px"
-});
+// document.addEventListener("mousemove", function (dets) {
+//     crsr.style.left = dets.x + "px"
+//     crsr.style.top = dets.y + "px"
+//     blur.style.left = dets.x - 30 + "px"
+//     blur.style.top = dets.y - 30 + "px"
+// });
 
-var h4all = document.querySelectorAll("#nav h4, #card1,#card2,#card3,.slidepara button,.dots,.one,.two,.three,.copyright a,.buttns");
-h4all.forEach(function (elem) {
-    elem.addEventListener("mouseenter", function () {
-        crsr.style.scale = 2;
-        crsr.style.border = "1px solid #fff";
-        crsr.style.backgroundColor = "transparent";
-    })
-    elem.addEventListener("mouseleave", function () {
-        crsr.style.scale = 1;
-        crsr.style.border = "0px solid #95C11E";
-        crsr.style.backgroundColor = "#95C11E";
-    });
-});
+// var h4all = document.querySelectorAll("#nav h4, #card1,#card2,#card3,.slidepara button,.dots,.one,.two,.three,.copyright a,.buttns");
+// h4all.forEach(function (elem) {
+//     elem.addEventListener("mouseenter", function () {
+//         crsr.style.scale = 2;
+//         crsr.style.border = "1px solid #fff";
+//         crsr.style.backgroundColor = "transparent";
+//     })
+//     elem.addEventListener("mouseleave", function () {
+//         crsr.style.scale = 1;
+//         crsr.style.border = "0px solid #95C11E";
+//         crsr.style.backgroundColor = "#95C11E";
+//     });
+// });
 
 gsap.to("#nav", {
     backgroundColor: "#000",
@@ -172,3 +172,21 @@ function openNav() {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+
+document.getElementById("slayy").addEventListener("click",function(){
+    document.querySelector(".popup").style.display="flex";
+})
+
+document.querySelector(".close").addEventListener("click",function(){
+    document.querySelector(".popup").style.display="none";
+})
+
+document.querySelectorAll('div').forEach(element => {
+    element.addEventListener('click', () => {
+        document.querySelectorAll('.aboutus').forEach(el => {
+            el.classList.add('blur');
+        });
+        element.classList.remove('blur'); // Remove blur from the clicked element
+    });
+});

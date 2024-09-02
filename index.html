@@ -22,7 +22,9 @@
         <h4>CAFE</h4>
         <div class="buttns">
             <button class="btn-55"><span>BOOK GOLF</span></button>
-            <button class="btn-55" onclick="openform()"><span>SIGN IN</span></button>
+            <button class="btn-55" id="slayy"><span>SIGN IN</span></button>
+
+
 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -41,13 +43,34 @@
         </div>
     </div>
 
+
+
+
     <div class="cursor"></div>
 
     <div class="cursor-blur"></div>
 
 
     <video src="videos/SFG-Website-Header-Video-0823.mp4" loop muted autoplay></video>
+
+
+
     <div id="main">
+        <div class="formup">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="popup">
+                    <input type="hidden" name="access_key" value="b546e9a6-ae36-4c8d-97b9-d136b9116d66">
+                    <div class="user">
+                        <img src="photos/close.png" alt="close" class="close">
+                        <input type="text" name="name" required>
+                        <input type="email" name="email" required>
+                        <textarea name="message" required></textarea>
+                        <button class="btn-81"><span>Submit></span></button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
         <div id="background">
             <h1>EAT. DRINK. PLAY.</h1>
             <h2>Welcome to Sidcup Family Golf!</h2>
