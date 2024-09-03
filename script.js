@@ -152,16 +152,7 @@ function scrollToTop() {
     const threshold = 200;
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-//   window.addEventListener('scroll', function() {
-
-//   if (scrollPosition > threshold) {
-//     arrow.classList.add('i');
-//     console.log("Added class 'i'");
-//   } else {
-//     arrow.classList.remove('i');
-//     console.log("Removed class 'i'");
-//   }
-//   });
+ 
 
 
 function openNav() {
