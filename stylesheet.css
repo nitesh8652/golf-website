@@ -7,12 +7,9 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
     /* color: white; */
-    
+
 }
 
-.blur{
-    filter: blur(5px);
-}
 
 #nav {
     width: 100%;
@@ -126,6 +123,8 @@
     border-radius: 8px;
     border: 3px solid #353506;
     text-align: center;
+    text-align: start;
+    font-weight: 300;
 }
 
 .user textarea {
@@ -137,10 +136,11 @@
 }
 
 .user button {
-    box-shadow: 0 0 7px #95B112;;
+    box-shadow: 0 0 7px #95B112;
+    ;
     border-radius: 4px;
     position: relative;
-    top: 25px;
+    top: -5px;
 }
 
 
@@ -158,12 +158,29 @@
 
 
 
-.user> :nth-child(3) {
+.user> :nth-child(4) {
     position: relative;
-    top: -25px;
+    top: -45px;
 }
 
-
+.user> :nth-child(3){
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 165px;
+    top: -57px;
+    border-radius: 50%;
+    background: none;
+}
+.user> :nth-child(5){
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 165px;
+    top: -100px;
+    border-radius: 50%;
+    background: none;
+}
 
 
 .btn-81,
@@ -185,10 +202,10 @@
     color:
         #fff;
     cursor: pointer;
-   font-size: 14px;
+    font-size: 14px;
     line-height: 1.5;
     text-shadow: 0 0 7px #95B112;
-    
+
     -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
 }
 
@@ -200,7 +217,7 @@
     display: block;
     overflow: hidden;
     height: 35px;
-    width: 85px;
+    width: 110px;
     position: relative;
     text-transform: uppercase;
 }
@@ -211,7 +228,7 @@
 
 .btn-81:before {
     background:
-    linear-gradient(to bottom, rgb(50, 157, 62), rgb(157, 205, 37));
+        linear-gradient(to bottom, rgb(50, 157, 62), rgb(157, 205, 37));
     bottom: 0;
     content: "";
     left: 0;
@@ -1491,7 +1508,7 @@ video {
 
     .user {
         background: linear-gradient(to bottom, rgb(50, 157, 62), rgb(157, 205, 37));
-        height: 330px;
+        height: 540px;
         width: 445px;
         border-radius: 3px;
         position: relative;
@@ -1500,8 +1517,8 @@ video {
         justify-content: center;
         flex-direction: column;
         top: 90px;
-    
-    
+
+
     }
 
 }
