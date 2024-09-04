@@ -163,7 +163,7 @@
     top: -45px;
 }
 
-.user> :nth-child(3){
+.user> :nth-child(3) {
     width: 30px;
     height: 30px;
     position: relative;
@@ -172,7 +172,8 @@
     border-radius: 50%;
     background: none;
 }
-.user> :nth-child(5){
+
+.user> :nth-child(5) {
     width: 30px;
     height: 30px;
     position: relative;
@@ -803,6 +804,7 @@ video {
     margin-top: 100px;
     border-radius: 17px;
     box-sizing: border-box;
+ 
 
 }
 
@@ -939,7 +941,7 @@ video {
     align-items: center;
     justify-content: center;
     bottom: 1330px;
-    width: 53%;
+    width: 740px;
     z-index: 99;
 }
 
@@ -1522,3 +1524,111 @@ video {
     }
 
 }
+
+/* @media only screen and (max-width:2437px) {
+    .usimg{
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        gap: 1533px;
+    }
+    .usimg> :nth-child(1) {
+        height: 400px;
+        width: 400px;
+        border-radius: 7px;
+    }
+
+    .usimg> :nth-child(2) {
+        height: 400px;
+        width: 400px;
+        border-radius: 7px;
+    }
+} */
+
+
+
+@media only screen and (max-width:1260px) {
+    #nav h4 {
+        color: #31A733;
+    }
+
+    .totalwidth {
+        width: 53px;
+        position: relative;
+        bottom: 1320px;
+        left: 92px;
+    }
+
+    .totalwidth {
+        width: 53%;
+        position: relative;
+        bottom: 1320px;
+        left: 92px;
+    }
+
+    .slideshow-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slidepara {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .slidepara h1 {
+        text-align: start;
+    }
+
+    .slideshow-container img {
+        width: 600px;
+        height: 415px;
+    }
+
+
+    .slidepara h1 {
+        font-size: 35px;
+    }
+
+    .slideshow-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .slidepara button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .totalwidth {
+      
+        display: flex;
+  flex-direction: row;
+  width: 100%;
+        
+       
+    }
+
+    .dots{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* .imgs{
+      display: grid;
+      place-items: center;
+    } */
+    .slideshow-container img {
+   position: relative;
+   right: 0%;
+}
+}
+
